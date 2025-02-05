@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Observer untuk animasi slide-in-left dan slide-in-right
   const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -139,9 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
       threshold: 0.2, // Trigger animasi ketika 20% elemen masuk ke viewport
   });
 
-  // Target semua elemen dengan kelas 'scale-in'
-  const scaleElements = document.querySelectorAll('.scale-in');
-  scaleElements.forEach((element) => {
+  // Target semua elemen dengan kelas animasi slide-in-left atau slide-in-right
+  const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right');
+  animatedElements.forEach((element) => {
       observer.observe(element);
   });
 });
