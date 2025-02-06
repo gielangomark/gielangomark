@@ -655,6 +655,7 @@ header.scrolled {
 }
 
 /* Styling untuk Section Kontak */
+/* Styling untuk Section Kontak */
 .contact-section {
     padding: 60px 20px;
     background-color: var(--second-bg-color);
@@ -674,10 +675,16 @@ header.scrolled {
     color: var(--second-color);
 }
 
+/* Styling untuk Formulir Kontak */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
+    border: 2px solid var(--main-color); /* Tambahkan border untuk formulir */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--bg-color); /* Latar belakang formulir lebih gelap */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
 }
 
 .form-group {
@@ -711,7 +718,8 @@ header.scrolled {
 
 .submit-btn {
     display: inline-block;
-    padding: 10px 20px;
+    width: 100%; /* Tombol penuh lebar */
+    padding: 12px;
     background-color: var(--main-color);
     color: var(--text-color);
     font-size: 1rem;
@@ -719,6 +727,7 @@ header.scrolled {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 .submit-btn:hover {
@@ -728,7 +737,13 @@ header.scrolled {
 /* Styling untuk Informasi Kontak */
 .contact-info {
     margin-top: 40px;
-    text-align: left;
+    text-align: center;
+    padding: 15px; /* Padding dikurangi agar lebih proporsional */
+    background-color: #333; /* Warna latar belakang lebih gelap */
+    color: #fff;
+    border: 1px solid var(--main-color); /* Ketebalan border dikurangi menjadi 1px */
+    border-radius: 8px; /* Sudut melengkung sedikit dikurangi agar lebih halus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan tetap dipertahankan */
 }
 
 .contact-info h3 {
@@ -785,12 +800,13 @@ header.scrolled {
 }
 
 .map iframe {
-    width:60%; /* Lebar peta 80% dari kontainer */
-    height: 500px; /* Tinggi peta */
+    width: 100%; /* Lebar peta 100% untuk responsivitas */
+    max-width: 800px; /* Batas maksimum lebar peta */
+    height: 400px; /* Tinggi peta lebih kecil */
     margin: 0 auto; /* Pusatkan peta secara horizontal */
     display: block;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
 }
   
   .footer {
