@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const texts = ["Web Developer", "Business Enthusiast", "Investor"];
+const texts = ["Web Developer", "Front-end Developer", "Back-End Developer"];
 let index = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -145,4 +145,27 @@ document.addEventListener('DOMContentLoaded', () => {
   animatedElements.forEach((element) => {
       observer.observe(element);
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let modal = document.getElementById("imageModal");
+    let modalImg = document.getElementById("modalImg");
+    let closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".img img").forEach(img => {
+        img.addEventListener("click", function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 });
