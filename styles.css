@@ -577,6 +577,23 @@ header.scrolled {
     transform: translateX(2px); /* Slide effect on hover */
   }
 
+  .qr-section {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.qr-section img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.qr-section h2 {
+    margin-bottom: 10px;
+    color: #f8f8f8;
+}
+
   .modal {
     display: none;
     position: fixed;
