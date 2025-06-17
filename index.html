@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no">
+    <title>GIELANG PORTOFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body onload="loading()">
+    <!-- Preloader -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Navigation Bar -->
+        <header>
+            <div class="logo">GIEE</div>
+            <div class="box-menu" id="menuIcon"><i class='bx bx-menu'></i></div>
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </header>
+
+        <!-- Home Section -->
+        <section id="home" class="section hero slide-in-left">
+            <div class="content fade-in">
+                <h1>Hello, I'm <br><span class="name">GIELANG OMAR</span></h1>
+                <p>Web Development - Front end - Back End </p>
+                <a href="#projects" class="btn">My Works</a> 
+            </div>
+            <div class="image"><img src="image/Foto-Profile.jpeg" alt=""></div>
+        </section>
+        <hr>
+
+
+        <!--about box -->
+        <section class="section slide-in-right" id="about">
+            <div class="top-header">
+              <h1>About me</h1>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="about-info">
+                  <figure class="about-me">
+                    <figcaption>
+                        <div>
+                          <img src="image/About me.jpeg" alt="" class="profile" />
+                        </div>
+                      <div class="typing-container">
+                        <span id="typing-text"></span>
+                      </div>
+                      <p>My name is Gielang. I am a web developer, Front End Developer, and Fullstack Developer. 
+                      </p>
+                      <p>
+                        Saya adalah Junior web developer berasal dari
+                       SMKN 40 jakarta Jurusan Rekayasa Perangkat Lunak (RPL)
+                      </p>
+                    </figcaption>
+                    <a href="https://wa.me/6281382665679" target="_blank">
+  <button class="about-me-btn">Hire Me</button>
+</a>
+                  </figure>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-box">
+                  <span class="title">HTML</span>
+                  <div class="skill-bar html">
+                    <span class="skill-per">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">JavaScript</span>
+                  <div class="skill-bar csharp">
+                    <span class="skill-per">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">CSS</span>
+                  <div class="skill-bar">
+                    <span class="skill-per css">
+                      <span class="tooltip">40%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">PHP</span>
+                  <div class="skill-bar">
+                    <span class="skill-per php">
+                      <span class="tooltip">60%</span>
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </section>
+          
+
+        <!-- Services Section -->
+        <section id="services" class="section slide-in-left">
+            <h2 class="Judul fade-in">My Services</h2>
+            <div class="services-container">
+                <div class="service slide-in-left">
+                    <i class='bx bx-desktop'></i> <!-- Icon layar komputer -->
+                    <h3>Front-End Developing</h3>
+                    <p>Creates interactive and visually appealing user interfaces using HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="s-btnn">Learn More</a>
+                </div>
+                <div class="service slide-in-right">
+                    <i class='bx bx-code'></i>
+                    <h3>Web Development</h3>
+                    <p>Develops and maintains websites using various programming languages and web technologies...</p>
+                    <a href="#" class="s-btnn">Learn More</a>
+                </div>
+                <div class="service slide-in-left">
+                    <i class='bx bx-cog'></i> <!-- Icon settings -->
+                    <h3>Back-End Developing</h3>
+                    <p>Builds and manages server-side logic, databases, and APIs to ensure smooth functionality.</p>
+                    <a href="#" class="s-btnn">Learn More</a>
+                </div>
+            </div>
+        </section>        
+
+
+       <!-- projects -->
+       <section id="projects">
+        <div class="container slide-in-right">
+            <h2 class="section-heading" data-outline="Projects">Projects</h2>
+            <div class="all-items fade-in">
+
+                <!-- Proyek 1 -->
+                <div class="item slide-in-left">
+                    <div class="item reveal"></div>
+                    <div class="left">
+                        <div class="img">
+                            <img src="image/P4-course.png" alt="P4 Course">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">P4 Course</h2>
+                        <h3 class="project-sub-title">Kursus Pemrograman Dasar</h3>
+                        <p class="project-desc">
+                            P4 Course adalah platform pembelajaran pemrograman dasar yang menggunakan Node.js dan Express. 
+                            Kursus ini menyediakan materi interaktif untuk mempelajari dasar-dasar pemrograman yang akan membantu user agar dapat mendalami bahasa pemrograman di dunia coding.                   
+                        </p>
+                        <div class="buttons">
+                            <a href="#" class="primary-btn outline external-link">
+                                <span>Visit</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="item slide-in-right">
+                    <div class="item reveal"></div>
+                    <div class="left">
+                        <div class="img">
+                            <img src="image/Perpustakaan.png" alt="Perpustakaan">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Perpustakaan</h2>
+                        <h3 class="project-sub-title">Sistem Pengelolaan Buku</h3>
+                        <p class="project-desc">
+                            Sistem perpustakaan ini dirancang untuk mengelola data buku, peminjaman, dan laporan buku. 
+                            Menggunakan PHP, sistem ini mampu mencetak laporan dalam format PDF dan memastikan pengelolaan koleksi buku lebih efisien.
+                        </p>
+                        <div class="buttons">
+                            <a href="#" class="primary-btn outline external-link">
+                                <span>Visit</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div class="item slide-in-left">
+                    <div class="item reveal"></div>
+                    <div class="left">
+                        <div class="img">
+                            <img src="image/Absensi.png" alt="Absensi Siswa">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Absensi Siswa</h2>
+                        <h3 class="project-sub-title">Sistem Manajemen Kehadiran</h3>
+                        <p class="project-desc">
+                            Sistem ini digunakan untuk mengelola data siswa dan absensi secara digital. 
+                            Dibangun dengan PHP, aplikasi ini mempermudah pelacakan kehadiran dan pembuatan laporan absensi dalam format yang lebih efisien.
+                        </p>
+                        <div class="buttons">
+                            <a href="#" class="primary-btn outline external-link">
+                                <span>Visit</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 4 -->
+            <div class="item slide-in-left">
+                    <div class="item reveal"></div>
+                    <div class="left">
+                        <div class="img">
+                            <img src="image/Perpusonline.png" alt="Absensi Siswa">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Perpustakaan digital</h2>
+                        <h3 class="project-sub-title">Sistem Manajemen Kehadiran</h3>
+                        <p class="project-desc">
+                            Perpustakaan digital adalah platform yang menyediakan akses mudah ke koleksi buku dan materi pembelajaran secara online. 
+                            Dengan antarmuka yang ramah pengguna, pengguna dapat menjelajahi, meminjam, dan membaca buku secara digital, meningkatkan pengalaman membaca mereka. Disini berbagai macam buku bisa dipinjam
+                        </p>
+                        <div class="buttons">
+                            <a href="#" class="primary-btn outline external-link">
+                                <span>Visit</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    
+
+    <section id="contact" class="contact-section slide-in-left">
+      <div class="container">
+          <!-- Judul Section -->
+          <h2 class="section-heading">Contact Me</h2>
+          <p class="section-subtitle">Feel free to reach out to me for any inquiries or collaborations!</p>
+  
+          <!-- Formulir Kontak -->
+          <form id="contact-form" class="contact-form fade-in">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+  
+          <!-- Informasi Kontak -->
+          <div class="contact-info fade-in">
+              <h3>Contact Information</h3>
+              <p><strong>Email:</strong> gastoe7a@gmail.com</p>
+              <p><strong>Phone:</strong> +62 813 8266 5679</p>
+          </div>
+  
+          <!-- Link Media Sosial -->
+          <div class="social-links fade-in">
+              <h3>Follow Me</h3>
+              <div class="social-media">
+                  <a href="https://id.linkedin.com/in/gielang-omar-khadavi-a004772b4" target="_blank" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                  <a href="https://www.instagram.com/gielangomrk/" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://github.com/gielangomark" target="_blank" class="social-icon"><i class='bx bxl-github'></i></a>
+              </div>
+          </div>
+  
+          <!-- Peta Lokasi (Opsional) -->
+          <div class="map slide-in-right">
+              <h3>Location</h3>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.409079697898!2d106.8580333147562!3d-6.208763495501246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4b9b8b5c5b5%3A0x5371bf2f5b5b5b5b!2sJl.%20Kayumanis%206%2C%20Matraman%2C%20Jakarta%20Timur!5e0!3m2!1sen!2sid!4v1698765432000"
+                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+  </section>
+        
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+          <!-- Navigasi Footer -->
+          <div class="footer-nav">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#projects">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+  
+          <!-- Riwayat Pendidikan -->
+          <div class="education">
+              <h3>Riwayat Pendidikan</h3>
+              <ul>
+                  <li>SDN UTAN KAYU 17 PAGI</li>
+                  <p>2014 - 2020</p>
+                  <br>
+                  <li>SMPN 97 JAKARTA</li>
+                  <p>2020 - 2023</p>
+                  <br>
+                  <li>SMKN 40 JAKARTA</li>
+                  <p>2023 - Sekarang</p>
+              </ul>
+          </div>
+  
+          <!-- Kontak -->
+          <div class="contact">
+              <h3>Kontak Kami</h3>
+              <p>Alamat: Jl. Kayumanis 6 Jarak II No 14A Matraman, Jakarta Timur</p>
+              <br>
+              <p>Telepon: +62 813 8266 5679</p>
+          </div>
+      </div>
+  
+      <!-- Informasi Tambahan -->
+      <p>More Info:</p>
+      <div class="social-media">
+          <a href="https://www.facebook.com/gielang.omar/" target="_blank" class="social-icon"><i class='bx bxl-facebook'></i></a>
+          <a href="https://wa.me/6281382665679" target="_blank" class="social-icon"><i class='bx bxl-whatsapp'></i></a>
+          <a href="https://www.instagram.com/gielangomrk/" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+      </div>
+  
+      <!-- Hak Cipta -->
+      <div class="footer-bottom">
+          <p>&copy; 2024 Gielang Omar. All rights reserved.</p>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
